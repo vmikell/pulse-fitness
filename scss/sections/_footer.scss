@@ -1,0 +1,18 @@
+@use '../custom' as *;
+
+footer{
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  color: $gray-700;
+  z-index: 9;
+  
+  a{
+    color: $gray-700;
+    text-decoration: none;
+
+    &:hover{
+      color: $gray-700;
+    }
+  }
+}

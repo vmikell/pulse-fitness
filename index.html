@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- aos library css link (THIS MUST COME BEFORE OTHER SCRIPTS!!!)-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+</head>
+
+<body>
+  <!-- 
+==================
+NAVBAR STARTS HERE
+==================
+ -->
+  <div class="hero-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light menu" data-aos="zoom-in" data-aos-duration="2500">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 
+    ================
+    VIDEO START HERE
+    ================  
+     -->
+
+    <section class="video-container">
+      <span></span>
+        <video src="./assets/video/hero video.mp4" autoplay loop playsinline muted>
+      </span>
+      </video>
+      <img src="./assets/images/logo.png" alt="pulse fitness logo" class="img-fluid">
+    </section>
+
+
+    <footer>
+      created by <a href="https://victormikell.com">Victor Mikell</a>
+    </footer>
+  </div>
+
+  
+
+  <!-- 
+==================
+SCRIPTS START HERE
+==================  
+ -->
+  <!-- bootstrap 5 js scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- aos library scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
