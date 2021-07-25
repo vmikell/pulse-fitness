@@ -1,6 +1,9 @@
 @use 'custom';
 
 
+// IMPORT COMPONENTS 
+@use './components/animations';
+
 // IMPORT SECTIONS
 @use './sections/hero.scss';
 @use './sections/footer';

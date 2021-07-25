@@ -10746,6 +10746,43 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.load {
+  width: 100px;
+  height: 100px;
+  margin: 110px auto 0;
+  border: solid 10px #32cd32;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: 53%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 0;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-wrapper {
   position: relative;
 }
@@ -10773,7 +10810,7 @@ textarea.form-control-lg {
   }
 }
 .video-container span {
-  background-color: rgba(6, 6, 7, 0.95);
+  background-color: rgba(6, 6, 7, 0.75);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -10788,12 +10825,14 @@ textarea.form-control-lg {
 }
 .video-container img {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 5.5rem;
   left: 0;
   right: 0;
   margin: auto;
   z-index: 9;
-  animation: blink 6s;
+  animation: blink 6s forwards;
+  animation-delay: 2s;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .video-container img {
@@ -10802,7 +10841,7 @@ textarea.form-control-lg {
 }
 @keyframes blink {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   12% {
     opacity: 0;

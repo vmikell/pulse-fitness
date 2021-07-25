@@ -1,0 +1,39 @@
+@use '../custom' as *;
+
+.load {
+  width: 100px;
+  height: 100px;
+  margin: 110px auto 0;
+  border: solid 10px #32cd32;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: 53%;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 0;
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.load-text{
+  height: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
