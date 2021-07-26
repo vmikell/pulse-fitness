@@ -5,15 +5,19 @@
 }
 
 .menu {
-  position: absolute;  
-  left: 42%;
+  position: absolute;
+  left: 40%;
   // transform: translate(-50%, 0);
   background-color: transparent;
   z-index: 9;
 
-  a{
+  @include media-breakpoint-up(md) {
+    left: 44%;
+  }
+
+  a {
     color: $white !important;
-  } 
+  }
 }
 
 .video-container {
@@ -21,90 +25,91 @@
   position: relative;
   overflow: hidden;
   top: 0;
+
   z-index: 1;
+
   @media (min-width: 600px) {
     height: 100vh;
   }
 
   span {
-    background-color: rgba(6, 6, 7, .75);
+    background-color: rgba(6, 6, 7, 0.75);
     position: absolute;
     height: 100%;
     width: 100%;
-  
+
     overflow: hidden;
     top: 0;
+
     z-index: 2;
+
     @media (min-width: 600px) {
       height: 100vh;
     }
   }
 
-  img{
+  img {
     position: absolute;
-    bottom:5.5rem;
-    left:0;
-    right:0;
+    bottom: 5.5rem;
+    left: 0;
+    right: 0;
     margin: auto;
-    z-index: 9;    
+    z-index: 9;
     animation: blink 6s forwards;
     animation-delay: 2s;
     opacity: 0;
 
-    @include media-breakpoint-up(md){
-      bottom:1;
+    @include media-breakpoint-up(md) {
+      bottom: 1;
     }
 
-    @keyframes blink{
-      0%{
+    @keyframes blink {
+      0% {
         opacity: 0;
       }
-      12%{
-        opacity:0;
-      }
-      15%{
-        opacity:1;
-      }
-      17%{
+      12% {
         opacity: 0;
       }
-      19%{
-        opacity:1;
+      15% {
+        opacity: 1;
       }
-
-      32%{
-        opacity:0;
-      }
-      35%{
-        opacity:1;
-      }
-      37%{
+      17% {
         opacity: 0;
       }
-      39%{
-        opacity:1;
-      }
-
-      52%{
-        opacity:0;
-      }
-      55%{
-        opacity:1;
-      }
-      57%{
-        opacity: 0;
-      }
-      59%{
-        opacity:1;
-      }
-      100%{
+      19% {
         opacity: 1;
       }
 
+      32% {
+        opacity: 0;
+      }
+      35% {
+        opacity: 1;
+      }
+      37% {
+        opacity: 0;
+      }
+      39% {
+        opacity: 1;
+      }
+
+      52% {
+        opacity: 0;
+      }
+      55% {
+        opacity: 1;
+      }
+      57% {
+        opacity: 0;
+      }
+      59% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   }
-
-  
 }
 
 video {

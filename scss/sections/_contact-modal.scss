@@ -1,0 +1,79 @@
+@use '../custom' as *;
+
+.contact-modal{
+  position: relative;
+
+}
+
+.contact-modal-video-wrapper {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+
+  z-index: 0;
+
+  span {
+    background-color: rgba(6, 6, 7, 0.65);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    // overflow: hidden;
+    top: 0rem;
+
+    z-index: 1;
+
+    @media (min-width: 600px) {
+      height: 100vh;
+    }
+  }
+
+  h3{
+     position: relative;
+     color: $white;
+     padding-top: 1rem;
+     text-align: center;
+
+     z-index: 2;
+  }
+
+  p{
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    color: $white;
+
+    z-index: 2;
+  }
+
+  form{
+    position: relative;
+    z-index: 2;
+    top: 2rem;
+    max-width: 700px;
+
+    
+  }
+
+  .contact-form-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal-logo-wrapper {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: $black;
+  height: 5rem;
+
+  z-index: 2;
+}
+
+.contact-header{
+  position: relative;
+
+  z-index: 2;
+}
