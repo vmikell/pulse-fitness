@@ -1,8 +1,12 @@
 @use '../custom' as *;
 
+.modal-body{
+  background-color: $black;
+  position: relative;
+}
+
 .contact-modal{
   position: relative;
-
 }
 
 .contact-modal-video-wrapper {
@@ -68,6 +72,7 @@
   justify-content: center;
   background-color: $black;
   height: 5rem;
+  padding-bottom: 1rem;
 
   z-index: 2;
 }
@@ -76,4 +81,8 @@
   position: relative;
 
   z-index: 2;
+}
+
+.modal-footer{
+  background-color: $black;
 }

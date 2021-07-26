@@ -27,13 +27,13 @@ NAVBAR STARTS HERE
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#trainers">
+              Trainers
+            </button>
+            <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#pricing">
+              Pricing
+            </button>
+            <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#contact">
               Contact
             </button>
           </ul>
@@ -62,8 +62,145 @@ NAVBAR STARTS HERE
     </footer>
   </div>
 
-  <div class="modal fade modal-custom" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <!-- 
+  =========================
+  TRAINERS MODAL STARTS HERE
+  =========================
+ -->
+  <div class="modal fade modal-custom" id="trainers" tabindex="-1" aria-labelledby="trainers" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-logo-wrapper">
+            <img src="./assets/images/logo.png" alt="pulse fitness logo">
+          </div>
+
+          <div class="modal-header justify-content-center contact-header">
+            <h5 class="modal-title text-white text-center" id="exampleModalLabel">Trainers</h5>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 trainer-video-wrapper">
+              <div class="video-circle">
+                <video src="https://drive.google.com/uc?id=1tKEtZvsoRZ_hB9rsdeXhG94RE7IlVg9J" autoplay loop playsinline
+                  muted></video>
+              </div>
+            </div>
+            <div class="col-md-6 trainer-description pt-5">
+              <h3>Brian Adams</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque repellat nemo
+                pariatur officiis, magnam nihil velit sapiente fugiat recusandae cumque amet, at suscipit beatae
+                reiciendis quisquam. Laudantium repellendus similique soluta neque quasi, culpa voluptatum illum. Sequi
+                dolore voluptatem alias. Temporibus itaque dolorem impedit at rerum officia ut amet qui, perspiciatis
+                assumenda, incidunt ratione esse fugiat excepturi odio similique vero ipsum sed facere quia accusamus
+                quaerat. Hic quasi perferendis iusto nobis ullam! Veritatis quaerat sapiente accusamus, laborum eligendi
+                possimus sit, modi, ex vitae repellat ab assumenda ea eveniet est earum nulla! Laborum velit doloremque
+                ad iure nulla, minus possimus molestias dolorum aperiam, saepe incidunt deleniti nihil accusantium ut,
+                fugit est laudantium at reprehenderit. Sint reiciendis illum illo rem.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">        
+            <div class="col-md-6 trainer-description pt-5">
+              <h3 class="text-end">Michelle Liplowski</h3>
+              <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque repellat nemo
+                pariatur officiis, magnam nihil velit sapiente fugiat recusandae cumque amet, at suscipit beatae
+                reiciendis quisquam. Laudantium repellendus similique soluta neque quasi, culpa voluptatum illum. Sequi
+                dolore voluptatem alias. Temporibus itaque dolorem impedit at rerum officia ut amet qui, perspiciatis
+                assumenda, incidunt ratione esse fugiat excepturi odio similique vero ipsum sed facere quia accusamus
+                quaerat. Hic quasi perferendis iusto nobis ullam! Veritatis quaerat sapiente accusamus, laborum eligendi
+                possimus sit, modi, ex vitae repellat ab assumenda ea eveniet est earum nulla! Laborum velit doloremque
+                ad iure nulla, minus possimus molestias dolorum aperiam, saepe incidunt deleniti nihil accusantium ut,
+                fugit est laudantium at reprehenderit. Sint reiciendis illum illo rem.</p>
+            </div>
+            <div class="col-md-6 trainer-video-wrapper">
+              <div class="video-circle">
+                <video src="https://drive.google.com/uc?id=12twUFjIZf8HwiR3K0olbBvvNgfkGxQKh" autoplay loop playsinline
+                  muted></video>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 trainer-video-wrapper ">
+              <div class="video-circle pt-5">
+                <video src="https://drive.google.com/uc?id=15vDgMEvMdy_QuouEsLkZ6RWUgvUI1J5O" autoplay loop playsinline
+                  muted></video>
+              </div>
+            </div>
+            <div class="col-md-6 trainer-description mt-5">
+              <h3>Amber deLorne</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque repellat nemo
+                pariatur officiis, magnam nihil velit sapiente fugiat recusandae cumque amet, at suscipit beatae
+                reiciendis quisquam. Laudantium repellendus similique soluta neque quasi, culpa voluptatum illum. Sequi
+                dolore voluptatem alias. Temporibus itaque dolorem impedit at rerum officia ut amet qui, perspiciatis
+                assumenda, incidunt ratione esse fugiat excepturi odio similique vero ipsum sed facere quia accusamus
+                quaerat. Hic quasi perferendis iusto nobis ullam! Veritatis quaerat sapiente accusamus, laborum eligendi
+                possimus sit, modi, ex vitae repellat ab assumenda ea eveniet est earum nulla! Laborum velit doloremque
+                ad iure nulla, minus possimus molestias dolorum aperiam, saepe incidunt deleniti nihil accusantium ut,
+                fugit est laudantium at reprehenderit. Sint reiciendis illum illo rem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- 
+  =========================
+  PRICING MODAL STARTS HERE
+  =========================
+ -->
+  <div class="modal fade modal-custom" id="pricing" tabindex="-1" aria-labelledby="pricing" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-logo-wrapper">
+            <img src="./assets/images/logo.png" alt="pulse fitness logo">
+          </div>
+          <div class="contact-modal-video-wrapper">
+            <span></span>
+            <video src="https://drive.google.com/uc?id=1uYG9Ry0tI48pshx6357ppi7B7r3rIKxa" autoplay loop playsinline
+              muted></video>
+            <div class="modal-header justify-content-center contact-header">
+              <h5 class="modal-title text-white text-center" id="exampleModalLabel">Pricing</h5>
+            </div>
+            <div class="pricing-text-wrapper"></div>
+            <h3>drop-in rate</h3>
+            <p class="text-center pb-2">Sessions must be reserved at least 48hr in advance. Calcelations require 24 hour
+              notice.</p>
+            <p class="text-center pb-5">$25 per session</p>
+            <h3>10-Class Pass</h3>
+            <p class="text-center pb-2">Sessions must be reserved at least 48hr in advance. Calcelations require 24 hour
+              notice.</p>
+            <p class="text-center pb-5">$225</p>
+            <h3>Monthly Membership</h3>
+            <p class="text-center pb-2">membership grants you unlimited sessions <br> Four 30 minute one-on-one form
+              evaluations <br> allows for same day cancelations without a penalty</p>
+            <p class="text-center pb-5">$425</p>
+            </p>
+
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- 
+  =========================
+  CONTACT MODAL STARTS HERE
+  =========================
+ -->
+
+  <div class="modal fade modal-custom" id="contact" tabindex="-1" aria-labelledby="contact" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-body">
@@ -73,16 +210,17 @@ NAVBAR STARTS HERE
           <div class="contact-modal-video-wrapper">
             <span></span>
             <video src="https://drive.google.com/uc?id=1zKxwPxdvTsux71uoJQC5qDymhzXaol31" autoplay loop playsinline
-              muted></video>            
+              muted></video>
             <div class="modal-header justify-content-center contact-header">
               <h5 class="modal-title text-white text-center" id="exampleModalLabel">Contact</h5>
             </div>
             <h3>are you ready to change your life?</h3>
             <p class="text-center pt-5">Contact us with any questions you may have about
-              our trainers, programs or packages and we will get back to you as soon as we put the weights down. 
-              </p>
+              our trainers, programs or packages and we will get back to you as soon as we put the weights down.
+            </p>
             <div class="contact-form-wrapper">
-              <form action="POST" data-netlify="true" class="contact-form row form">
+              <form action="POST" data-netlify="true"
+                class="contact-form row form justify-content-center                                        ">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                   <input type="text" name="firstName" placeholder="First Name" id="inputFirstName"
                     class="shadow form-control form-control-lg" />
@@ -98,11 +236,10 @@ NAVBAR STARTS HERE
                 <div class="col-lg-12 col-sm-12 mb-3">
                   <textarea name="text" placeholder="drop us a line!" id="message"
                     class="shadow form-control form-control-lg" cols="30" rows="4">
-                    message
                 </textarea>
                 </div>
                 <div class="text-center d-grid mt-1 justify-content-center text-center contact-btn-wrapper">
-                  <button type="submit" class="btn btn-primary btn-submit pt-3 pb-3">
+                  <button type="submit" class="btn btn-primary btn-submit pt-3 pb-3 mb-5">
                     submit
                     <i class="fas fa-paper-plane"></i>
                   </button>

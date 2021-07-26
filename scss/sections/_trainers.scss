@@ -1,0 +1,25 @@
+@use '../custom' as *;
+
+
+.trainer-video-wrapper{
+  display: block;
+
+  @include media-breakpoint-up(sm){
+  position: relative;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  }
+}
+
+.video-circle {
+  position: relative;
+  top:1.5rem;
+  overflow: hidden;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  bottom:0;
+  padding: 2rem;
+  background-color: green;
+}

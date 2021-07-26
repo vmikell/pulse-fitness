@@ -1,0 +1,9 @@
+@use '../custom' as *;
+
+.pricing-modal-logo-wrapper{
+  position: relative;
+  top:0;
+
+  z-index: 2;
+}
+

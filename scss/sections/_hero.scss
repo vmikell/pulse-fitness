@@ -6,15 +6,14 @@
 
 .menu {
   position: absolute;
-  left: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
   // transform: translate(-50%, 0);
   background-color: transparent;
   z-index: 9;
 
-  @include media-breakpoint-up(md) {
-    left: 44%;
-  }
-
+  
   a {
     color: $white !important;
   }

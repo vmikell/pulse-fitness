@@ -10789,14 +10789,11 @@ textarea.form-control-lg {
 
 .menu {
   position: absolute;
-  left: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
   background-color: transparent;
   z-index: 9;
-}
-@media (min-width: 768px) {
-  .menu {
-    left: 44%;
-  }
 }
 .menu a {
   color: #fff !important;
@@ -10914,6 +10911,11 @@ footer a:hover {
   color: #495057;
 }
 
+.modal-body {
+  background-color: #000;
+  position: relative;
+}
+
 .contact-modal {
   position: relative;
 }
@@ -10969,12 +10971,47 @@ footer a:hover {
   justify-content: center;
   background-color: #000;
   height: 5rem;
+  padding-bottom: 1rem;
   z-index: 2;
 }
 
 .contact-header {
   position: relative;
   z-index: 2;
+}
+
+.modal-footer {
+  background-color: #000;
+}
+
+.pricing-modal-logo-wrapper {
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.trainer-video-wrapper {
+  display: block;
+}
+@media (min-width: 576px) {
+  .trainer-video-wrapper {
+    position: relative;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.video-circle {
+  position: relative;
+  top: 1.5rem;
+  overflow: hidden;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  bottom: 0;
+  padding: 2rem;
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
