@@ -10783,6 +10783,11 @@ textarea.form-control-lg {
   align-items: center;
 }
 
+.spinner-grow {
+  padding: 4rem;
+  margin-top: 3rem;
+}
+
 .hero-wrapper {
   position: relative;
 }
@@ -10827,7 +10832,7 @@ textarea.form-control-lg {
 }
 .video-container img {
   position: absolute;
-  bottom: 5.5rem;
+  bottom: 10.5rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -10884,6 +10889,18 @@ textarea.form-control-lg {
   100% {
     opacity: 1;
   }
+}
+.video-container .address-wrapper {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  z-index: 9;
+}
+.video-container .address-wrapper a {
+  color: #fff;
+  text-decoration: none;
 }
 
 video {

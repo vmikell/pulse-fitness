@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Pulse Fitness</title>
+  <link rel="icon" href="./assets/images/logo-black.png">
+  </link>
   <!-- aos library css link (THIS MUST COME BEFORE OTHER SCRIPTS!!!)-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -42,9 +44,9 @@ NAVBAR STARTS HERE
     </nav>
 
     <!-- 
-    ================
-    VIDEO START HERE
-    ================  
+    ======================
+    HERO VIDEO STARTS HERE
+    ======================  
      -->
 
     <section class="video-container">
@@ -53,19 +55,22 @@ NAVBAR STARTS HERE
       <span></span>
       <video src="https://drive.google.com/uc?id=1Jb8hxYgVsrMjtqqrTD38HkD_BbO1BFfe" autoplay loop playsinline muted>
       </video>
+      <div class="address-wrapper" data-aos="zoom-in" data-aos-duration="3000">
+        <p>123 Main Street</p>
+        <p>Anywhere, USA 12345</p>
+        <p> <a href="tel:800-555-1234">(800) 555-1234</a> </p>
+      </div>
       <img src="./assets/images/logo.png" alt="pulse fitness logo" class="img-fluid">
     </section>
-
-
     <footer>
       created by <a href="https://victormikell.com">Victor Mikell</a>
     </footer>
   </div>
 
   <!-- 
-  =========================
+  ==========================
   TRAINERS MODAL STARTS HERE
-  =========================
+  ==========================
  -->
   <div class="modal fade modal-custom" id="trainers" tabindex="-1" aria-labelledby="trainers" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
@@ -74,20 +79,25 @@ NAVBAR STARTS HERE
           <div class="modal-logo-wrapper">
             <img src="./assets/images/logo.png" alt="pulse fitness logo">
           </div>
-
+          <button type="button" class="btn btn-primary text-center" data-bs-dismiss="modal">Back</button>
           <div class="modal-header justify-content-center contact-header">
-            <h5 class="modal-title text-white text-center" id="exampleModalLabel">Trainers</h5>
+            <h5 class="modal-title text-white justify-content-center" id="exampleModalLabel">Trainers</h5>
           </div>
           <div class="row justify-content-center">
             <div class="col-md-6 trainer-video-wrapper">
               <div class="video-circle">
+                <div class="text-center">
+                  <div class="spinner-grow spinner-grow-md" role="status">
+                  </div>
+                </div>
                 <video src="https://drive.google.com/uc?id=1tKEtZvsoRZ_hB9rsdeXhG94RE7IlVg9J" autoplay loop playsinline
                   muted></video>
               </div>
             </div>
             <div class="col-md-6 trainer-description pt-5">
-              <h3>Brian Adams</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque repellat nemo
+              <h3 class="text-white">Brian Adams</h3>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque
+                repellat nemo
                 pariatur officiis, magnam nihil velit sapiente fugiat recusandae cumque amet, at suscipit beatae
                 reiciendis quisquam. Laudantium repellendus similique soluta neque quasi, culpa voluptatum illum. Sequi
                 dolore voluptatem alias. Temporibus itaque dolorem impedit at rerum officia ut amet qui, perspiciatis
@@ -98,10 +108,12 @@ NAVBAR STARTS HERE
                 fugit est laudantium at reprehenderit. Sint reiciendis illum illo rem.</p>
             </div>
           </div>
-          <div class="row justify-content-center">        
+          <div class="row justify-content-center">
             <div class="col-md-6 trainer-description pt-5">
-              <h3 class="text-end">Michelle Liplowski</h3>
-              <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque repellat nemo
+              <h3 class="text-end text-white">Michelle Liplowski</h3>
+              <p class="text-end text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque
+                neque
+                repellat nemo
                 pariatur officiis, magnam nihil velit sapiente fugiat recusandae cumque amet, at suscipit beatae
                 reiciendis quisquam. Laudantium repellendus similique soluta neque quasi, culpa voluptatum illum. Sequi
                 dolore voluptatem alias. Temporibus itaque dolorem impedit at rerum officia ut amet qui, perspiciatis
@@ -113,6 +125,10 @@ NAVBAR STARTS HERE
             </div>
             <div class="col-md-6 trainer-video-wrapper">
               <div class="video-circle">
+                <div class="text-center">
+                  <div class="spinner-grow spinner-grow-md" role="status">
+                  </div>
+                </div>
                 <video src="https://drive.google.com/uc?id=12twUFjIZf8HwiR3K0olbBvvNgfkGxQKh" autoplay loop playsinline
                   muted></video>
               </div>
@@ -121,13 +137,18 @@ NAVBAR STARTS HERE
           <div class="row justify-content-center">
             <div class="col-md-6 trainer-video-wrapper ">
               <div class="video-circle pt-5">
+                <div class="text-center">
+                  <div class="spinner-grow spinner-grow-md" role="status">
+                  </div>
+                </div>
                 <video src="https://drive.google.com/uc?id=15vDgMEvMdy_QuouEsLkZ6RWUgvUI1J5O" autoplay loop playsinline
                   muted></video>
               </div>
             </div>
             <div class="col-md-6 trainer-description mt-5">
-              <h3>Amber deLorne</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque repellat nemo
+              <h3 class="text-white">Amber deLorne</h3>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti eaque neque
+                repellat nemo
                 pariatur officiis, magnam nihil velit sapiente fugiat recusandae cumque amet, at suscipit beatae
                 reiciendis quisquam. Laudantium repellendus similique soluta neque quasi, culpa voluptatum illum. Sequi
                 dolore voluptatem alias. Temporibus itaque dolorem impedit at rerum officia ut amet qui, perspiciatis
@@ -140,7 +161,7 @@ NAVBAR STARTS HERE
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Back</button>
         </div>
       </div>
     </div>
@@ -153,6 +174,7 @@ NAVBAR STARTS HERE
   PRICING MODAL STARTS HERE
   =========================
  -->
+
   <div class="modal fade modal-custom" id="pricing" tabindex="-1" aria-labelledby="pricing" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
@@ -160,6 +182,7 @@ NAVBAR STARTS HERE
           <div class="modal-logo-wrapper">
             <img src="./assets/images/logo.png" alt="pulse fitness logo">
           </div>
+          <button type="button" class="btn btn-primary mb-2" data-bs-dismiss="modal">Back</button>
           <div class="contact-modal-video-wrapper">
             <span></span>
             <video src="https://drive.google.com/uc?id=1uYG9Ry0tI48pshx6357ppi7B7r3rIKxa" autoplay loop playsinline
@@ -181,13 +204,10 @@ NAVBAR STARTS HERE
               evaluations <br> allows for same day cancelations without a penalty</p>
             <p class="text-center pb-5">$425</p>
             </p>
-
-
           </div>
-
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Back</button>
         </div>
       </div>
     </div>
@@ -207,6 +227,7 @@ NAVBAR STARTS HERE
           <div class="modal-logo-wrapper">
             <img src="./assets/images/logo.png" alt="pulse fitness logo">
           </div>
+          <button type="button" class="btn btn-primary mb-2" data-bs-dismiss="modal">Back</button>
           <div class="contact-modal-video-wrapper">
             <span></span>
             <video src="https://drive.google.com/uc?id=1zKxwPxdvTsux71uoJQC5qDymhzXaol31" autoplay loop playsinline
@@ -219,8 +240,9 @@ NAVBAR STARTS HERE
               our trainers, programs or packages and we will get back to you as soon as we put the weights down.
             </p>
             <div class="contact-form-wrapper">
-              <form action="POST" data-netlify="true"
+              <form name="contact" method="POST" data-netlify="true"
                 class="contact-form row form justify-content-center                                        ">
+                <input type="hidden" name="form-name" value="contact">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                   <input type="text" name="firstName" placeholder="First Name" id="inputFirstName"
                     class="shadow form-control form-control-lg" />
@@ -247,10 +269,9 @@ NAVBAR STARTS HERE
                 <div data-netlify-recaptcha="true" class="mt-3 mb-3 justify-content-center"></div>
               </form>
             </div>
-
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Back</button>
           </div>
         </div>
       </div>
@@ -271,7 +292,9 @@ SCRIPTS START HERE
   <script>
     AOS.init();
   </script>
-
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20482135.js"></script>
+  <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>
